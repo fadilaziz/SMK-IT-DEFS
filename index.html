@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>-->
+    <title>SMK IT DEF School</title>
+    <link rel="stylesheet" href="src/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="icon" href="src/img/Logo-SMK.png" type="image/png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+       // Konfigurasi Tailwind untuk dark mode
+       tailwind.config = {
+         darkMode: 'class', // Aktifkan mode berbasis class
+       };
+    </script>
+</head>
+<body class="text-pretty">
+
+   <!--Navbar-->
+   <header class="backdrop-blur-lg transition delay-150 duration-300 font-sans fixed top-0 w-full z-10 dark:text-white ">
+        <div class="flex items-center justify-between px-5 py-3  border-b-1 border-gray-300 dark:border-b-1 dark:border-slate-600 transition delay-150 duration-300"> 
+          <a href="">
+            <div class="flex items-center gap-x-3">
+              <figure class="w-10 h-10 lg:w-10 lg:h-10"><img src="src/img/Logo-SMK.png" alt="Logo SMK IT "></figure>
+              <h3 class="font-semibold text-xl lg:text-xl">SMK-SMA IT DEFS</h3>
+            </div>
+          </a>
+
+            <div class="flex gap-2 items-center">
+
+            <!--Sosial Media-->
+            <div class="hidden lg:block">
+              <div class="flex space-x-6 text-gray-600 mr-5 ">
+                    <a class="hover:opacity-75" href target="_blank" rel="noreferrer">
+                      <span class="sr-only"> Facebook </span>
+                      <svg class="w-6 h-6 dark:text-white delay-300 transition duration-150" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fillRule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clipRule="evenodd" />
+                      </svg>
+                    </a>
+                    <a class="hover:opacity-75" href="https://www.instagram.com/smk_it_darelfath?igsh=dDZ2ajdoazYyanc1" target="_blank" rel="noreferrer" >
+                      <span class="sr-only"> Instagram </span>
+                      <svg class="w-6 h-6 dark:text-white delay-300 transition duration-150" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fillRule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clipRule="evenodd" />
+                      </svg>
+                    </a>
+                    <a class="hover:opacity-75" href="https://github.com/fadilaziz/SMK-IT-DEFS" target="_blank" rel="noreferrer">
+                      <span class="sr-only"> GitHub </span>
+                      <svg class="w-6 h-6 dark:text-white delay-300 transition duration-150" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fillRule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clipRule="evenodd" />
+                      </svg>
+                    </a>
+                  </div>
+            </div>
+        
+
+                <!--DarkMode Button-->
+                <button id="darkModeToggle" class="border-1 border-gray-500 rounded-md p-2 ">
+                    <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                        <path fill-rule="evenodd" d="M9.528 1.718a.75.75 0 0 1 .162.819A8.97 8.97 0 0 0 9 6a9 9 0 0 0 9 9 8.97 8.97 0 0 0 3.463-.69.75.75 0 0 1 .981.98 10.503 10.503 0 0 1-9.694 6.46c-5.799 0-10.5-4.7-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 0 1 .818.162Z" clip-rule="evenodd" />
+                    </svg>
+                </button>
+
+                <span class="text-gray-300 hidden">|</span>
+
+                <script>
+                    // Toggle dark mode
+                    const toggleButton = document.getElementById('darkModeToggle');
+                    const htmlElement = document.documentElement;
+                
+                    toggleButton.addEventListener('click', () => {
+                      if (htmlElement.classList.contains('dark')) {
+                        htmlElement.classList.remove('dark');
+                        localStorage.setItem('theme', 'light'); // Simpan tema terang di localStorage
+                      } else {
+                        htmlElement.classList.add('dark');
+                        localStorage.setItem('theme', 'dark'); // Simpan tema gelap di localStorage
+                      }
+                    });
+                
+                    // Tetapkan tema berdasarkan preferensi yang tersimpan
+                    if (localStorage.getItem('theme') === 'dark') {
+                      htmlElement.classList.add('dark');
+                    } else {
+                      htmlElement.classList.remove('dark');
+                    }
+                  </script>
+
+              <!-- Tombol untuk menampilkan/menyembunyikan sidebar -->
+              <div>
+                  <button id="toggle-sidebar" class="px-2.5 py-1 border-1 border-gray-500 rounded-md text-gray-700 hover:bg-gray-300 text-xl dark:text-white transition delay-150 duration-300">☰</button>
+              </div>
+
+              <div>
+                  <!-- Sidebar -->
+                  <ul id="sidebar" class="hidden flex flex-col px-4 py-5 shadow-md rounded-xl absolute top-16 mt-3 right-0 mr-3 bg-white border-1 border-gray-300 dark:bg-slate-900 dark:border-1 dark:border-gray-500 transition delay-150 duration-300">
+                          <a href="profil-sekolah.html">
+                              <button class="bg-white  flex w-full gap-2 text-sm rounded-md text-black hover:bg-gray-300 px-2 py-1 items-center dark:text-white dark:bg-slate-900 dark:hover:bg-slate-700 dark:hover:text-white ">
+                                  <svg class="w-4 h-4 text-slate-600 dark:text-slate-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                                      <path fill-rule="evenodd" d="M18.97 3.659a2.25 2.25 0 0 0-3.182 0l-10.94 10.94a3.75 3.75 0 1 0 5.304 5.303l7.693-7.693a.75.75 0 0 1 1.06 1.06l-7.693 7.693a5.25 5.25 0 1 1-7.424-7.424l10.939-10.94a3.75 3.75 0 1 1 5.303 5.304L9.097 18.835l-.008.008-.007.007-.002.002-.003.002A2.25 2.25 0 0 1 5.91 15.66l7.81-7.81a.75.75 0 0 1 1.061 1.06l-7.81 7.81a.75.75 0 0 0 1.054 1.068L18.97 6.84a2.25 2.25 0 0 0 0-3.182Z" clip-rule="evenodd" />
+                                  </svg>
+                                  Profile Sekolah
+                              </button>
+                          </a>
+
+                          <a href="visi & misi.html" target="_blank">
+                              <button class="bg-white  flex w-full gap-2 text-sm rounded-md text-black hover:bg-gray-300 px-2 py-1 items-center dark:text-white dark:bg-slate-900 dark:hover:bg-slate-700 dark:hover:text-white ">
+                                  <svg class="w-4 h-4 text-slate-600 dark:text-slate-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                                      <path fill-rule="evenodd" d="M2.25 6a3 3 0 0 1 3-3h13.5a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3H5.25a3 3 0 0 1-3-3V6Zm18 3H3.75v9a1.5 1.5 0 0 0 1.5 1.5h13.5a1.5 1.5 0 0 0 1.5-1.5V9Zm-15-3.75A.75.75 0 0 0 4.5 6v.008c0 .414.336.75.75.75h.008a.75.75 0 0 0 .75-.75V6a.75.75 0 0 0-.75-.75H5.25Zm1.5.75a.75.75 0 0 1 .75-.75h.008a.75.75 0 0 1 .75.75v.008a.75.75 0 0 1-.75.75H7.5a.75.75 0 0 1-.75-.75V6Zm3-.75A.75.75 0 0 0 9 6v.008c0 .414.336.75.75.75h.008a.75.75 0 0 0 .75-.75V6a.75.75 0 0 0-.75-.75H9.75Z" clip-rule="evenodd" />
+                                    </svg>                              
+                                  Visi & Misi
+                              </button>
+                          </a>
+                          
+                          <a href="jurusan.html" target="_blank">
+                              <button class="bg-white  flex w-full gap-2 text-sm rounded-md text-black hover:bg-gray-300 px-2 py-1 items-center dark:text-white dark:bg-slate-900 dark:hover:bg-slate-700 dark:hover:text-white ">
+                                  <svg class="w-4 h-4 text-slate-600 dark:text-slate-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                                      <path fill-rule="evenodd" d="M7.502 6h7.128A3.375 3.375 0 0 1 18 9.375v9.375a3 3 0 0 0 3-3V6.108c0-1.505-1.125-2.811-2.664-2.94a48.972 48.972 0 0 0-.673-.05A3 3 0 0 0 15 1.5h-1.5a3 3 0 0 0-2.663 1.618c-.225.015-.45.032-.673.05C8.662 3.295 7.554 4.542 7.502 6ZM13.5 3A1.5 1.5 0 0 0 12 4.5h4.5A1.5 1.5 0 0 0 15 3h-1.5Z" clip-rule="evenodd" />
+                                      <path fill-rule="evenodd" d="M3 9.375C3 8.339 3.84 7.5 4.875 7.5h9.75c1.036 0 1.875.84 1.875 1.875v11.25c0 1.035-.84 1.875-1.875 1.875h-9.75A1.875 1.875 0 0 1 3 20.625V9.375ZM6 12a.75.75 0 0 1 .75-.75h.008a.75.75 0 0 1 .75.75v.008a.75.75 0 0 1-.75.75H6.75a.75.75 0 0 1-.75-.75V12Zm2.25 0a.75.75 0 0 1 .75-.75h3.75a.75.75 0 0 1 0 1.5H9a.75.75 0 0 1-.75-.75ZM6 15a.75.75 0 0 1 .75-.75h.008a.75.75 0 0 1 .75.75v.008a.75.75 0 0 1-.75.75H6.75a.75.75 0 0 1-.75-.75V15Zm2.25 0a.75.75 0 0 1 .75-.75h3.75a.75.75 0 0 1 0 1.5H9a.75.75 0 0 1-.75-.75ZM6 18a.75.75 0 0 1 .75-.75h.008a.75.75 0 0 1 .75.75v.008a.75.75 0 0 1-.75.75H6.75a.75.75 0 0 1-.75-.75V18Zm2.25 0a.75.75 0 0 1 .75-.75h3.75a.75.75 0 0 1 0 1.5H9a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd" />
+                                  </svg>                              
+                                                                
+                                  Jurusan
+                              </button>
+                          </a>
+
+                          <a href="">
+                              <button class="bg-white  flex w-full gap-2 text-sm rounded-md text-black hover:bg-gray-300 px-2 py-1 items-center dark:text-white dark:bg-slate-900 dark:hover:bg-slate-700 dark:hover:text-white ">
+                                  <svg class="w-4 h-4 text-slate-600 dark:text-slate-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                                      <path d="M12 .75a8.25 8.25 0 0 0-4.135 15.39c.686.398 1.115 1.008 1.134 1.623a.75.75 0 0 0 .577.706c.352.083.71.148 1.074.195.323.041.6-.218.6-.544v-4.661a6.714 6.714 0 0 1-.937-.171.75.75 0 1 1 .374-1.453 5.261 5.261 0 0 0 2.626 0 .75.75 0 1 1 .374 1.452 6.712 6.712 0 0 1-.937.172v4.66c0 .327.277.586.6.545.364-.047.722-.112 1.074-.195a.75.75 0 0 0 .577-.706c.02-.615.448-1.225 1.134-1.623A8.25 8.25 0 0 0 12 .75Z" />
+                                      <path fill-rule="evenodd" d="M9.013 19.9a.75.75 0 0 1 .877-.597 11.319 11.319 0 0 0 4.22 0 .75.75 0 1 1 .28 1.473 12.819 12.819 0 0 1-4.78 0 .75.75 0 0 1-.597-.876ZM9.754 22.344a.75.75 0 0 1 .824-.668 13.682 13.682 0 0 0 2.844 0 .75.75 0 1 1 .156 1.492 15.156 15.156 0 0 1-3.156 0 .75.75 0 0 1-.668-.824Z" clip-rule="evenodd" />
+                                    </svg>
+                                                          
+                                  Kegiatan
+                              </button>
+                          </a>
+                          <a href="https://docs.google.com/forms/d/e/1FAIpQLSfPVirU0k4AIAVCAkymqV_sSyCvx7eAzzw5ks2C2xT--lgjQA/viewform">
+                              <button class="bg-white  flex w-full gap-2 text-sm rounded-md text-black hover:bg-gray-300 px-2 py-1 items-center dark:text-white dark:bg-slate-900 dark:hover:bg-slate-700 dark:hover:text-white ">
+                                  <svg class="w-4 h-4 text-slate-600 dark:text-slate-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                                      <path d="M12 .75a8.25 8.25 0 0 0-4.135 15.39c.686.398 1.115 1.008 1.134 1.623a.75.75 0 0 0 .577.706c.352.083.71.148 1.074.195.323.041.6-.218.6-.544v-4.661a6.714 6.714 0 0 1-.937-.171.75.75 0 1 1 .374-1.453 5.261 5.261 0 0 0 2.626 0 .75.75 0 1 1 .374 1.452 6.712 6.712 0 0 1-.937.172v4.66c0 .327.277.586.6.545.364-.047.722-.112 1.074-.195a.75.75 0 0 0 .577-.706c.02-.615.448-1.225 1.134-1.623A8.25 8.25 0 0 0 12 .75Z" />
+                                      <path fill-rule="evenodd" d="M9.013 19.9a.75.75 0 0 1 .877-.597 11.319 11.319 0 0 0 4.22 0 .75.75 0 1 1 .28 1.473 12.819 12.819 0 0 1-4.78 0 .75.75 0 0 1-.597-.876ZM9.754 22.344a.75.75 0 0 1 .824-.668 13.682 13.682 0 0 0 2.844 0 .75.75 0 1 1 .156 1.492 15.156 15.156 0 0 1-3.156 0 .75.75 0 0 1-.668-.824Z" clip-rule="evenodd" />
+                                    </svg>
+                                                          
+                                  Pendaftaran
+                              </button>
+                          </a>
+
+                          <a href="https://wa.me/6282183475547?text=Assalamualaikum%20Saya%20Ingin%20Bertanya...?">
+                              <button class="bg-white  flex w-full gap-2 text-sm rounded-md text-black hover:bg-gray-300 px-2 py-1 items-center dark:text-white dark:bg-slate-900 dark:hover:bg-slate-700 dark:hover:text-white ">
+                                  <svg class="w-4 h-4 text-slate-600 dark:text-slate-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                                      <path fill-rule="evenodd" d="M19.902 4.098a3.75 3.75 0 0 0-5.304 0l-4.5 4.5a3.75 3.75 0 0 0 1.035 6.037.75.75 0 0 1-.646 1.353 5.25 5.25 0 0 1-1.449-8.45l4.5-4.5a5.25 5.25 0 1 1 7.424 7.424l-1.757 1.757a.75.75 0 1 1-1.06-1.06l1.757-1.757a3.75 3.75 0 0 0 0-5.304Zm-7.389 4.267a.75.75 0 0 1 1-.353 5.25 5.25 0 0 1 1.449 8.45l-4.5 4.5a5.25 5.25 0 1 1-7.424-7.424l1.757-1.757a.75.75 0 1 1 1.06 1.06l-1.757 1.757a3.75 3.75 0 1 0 5.304 5.304l4.5-4.5a3.75 3.75 0 0 0-1.035-6.037.75.75 0 0 1-.354-1Z" clip-rule="evenodd" />
+                                    </svg>                                                            
+                                  Kontak
+                              </button>
+                          </a>
+                  </div>
+              </div>
+        <script>
+            // Script untuk menyembunyikan/menampilkan sidebar
+            const toggleeButton = document.getElementById('toggle-sidebar');
+            const sidebar = document.getElementById('sidebar');
+
+            // Tampilkan atau sembunyikan sidebar dengan tombol
+            toggleeButton.addEventListener('click', () => {
+                sidebar.classList.toggle('hidden');
+            });
+
+            // Tambahkan fungsi tap di mana saja untuk menyembunyikan sidebar
+            document.addEventListener('click', (event) => {
+                // Pastikan klik tidak berasal dari sidebar atau tombol toggle
+                if (!sidebar.contains(event.target) && event.target !== toggleeButton) {
+                    sidebar.classList.add('hidden');
+                }
+            });
+
+        </script>
+   </header>
+
+   <!--Hero Section-->
+   <main class="transition delay-150 duration-300 w-full flex justify-between flex-col lg:flex-row pt-20 dark:bg-slate-800 ">
+        <section data-aos="fade-up"data-aos-duration="2000" class="flex flex-col gap-1 my-5 mx-5 lg:mt-20 lg:ml-16 lg:mx-10 ">
+            <h2 class="font-semibold text-xl text-gray-500 dark:text-300 transition delay-150 duration-300">Lembaga Pendidikan </h2>
+            <h1 class="font-bold text-5xl lg:text-7xl dark:text-white transition delay-150 duration-300"><span class="text-orange-500 ">SMK-SMA</span> IT DAR EL FATH  SCHOOL</h1>
+            <p class="w-auto text-gray-600 mt-2 lg:text-md lg:w-xl dark:text-gray-300 transition delay-150 duration-300">"SMK-SMA IT DAR EL FATH adalah 
+                sekolah yang mengintegrasikan nilai-nilai keislaman dengan pendidikan 
+                akademik dan keterampilan modern untuk mencetak generasi berakhlak mulia
+                Berakhlakul Karimah, Religius, Smart, Kompeten, dan Mandiri".
+            </p>
+            <div class="mt-5 flex flex-row gap-3">
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSfPVirU0k4AIAVCAkymqV_sSyCvx7eAzzw5ks2C2xT--lgjQA/viewform"><button class=" transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-blue-500 py-2 px-5 bg-blue-900 rounded-full text-white font-semibold dark:bg-blue-500 dark:hover:bg-blue-900">Daftar Sekarang</button></a>
+              <a href="https://wa.me/6282183475547?text=Assalamualaikum%20Saya%20Ingin%20Bertanya...?"><button class="transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-blue-500 hover:text-white py-2 px-5 border-1 border-gray-300 rounded-full dark:text-white dark:border-1 dark:border-white">Hubungi Kami</button></a>
+          </div>
+        </section>
+        <figure data-aos="fade-up"data-aos-duration="2000">
+            <img class="w-2xl lg:w-auto" src="src/img/sipa lp.png" alt="">
+        </figure>
+   </main>
+
+   <!--Tentang Sekolah-->
+   <div class="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32">
+    <img src="src/img/tentang.JPG" alt="" class="opacity-50 grayscale fill-neutral-600 absolute inset-0 -z-10 size-full object-cover object-right md:object-center">
+    <div class="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl" aria-hidden="true">
+      <div class="aspect-1097/845 w-[68.5625rem] bg-linear-to-tr from-[#ff4694] to-[#776fff] opacity-20" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+    </div>
+    <div class="absolute -top-52 left-1/2 -z-10 -translate-x-1/2 transform-gpu blur-3xl sm:top-[-28rem] sm:ml-16 sm:translate-x-0 sm:transform-gpu" aria-hidden="true">
+      <div class="aspect-1097/845 w-[68.5625rem] bg-linear-to-tr from-[#ff4694] to-[#776fff] opacity-20" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+    </div>
+    <div data-aos="fade-right"data-aos-duration="1000" class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="mx-auto max-w-2xl lg:mx-0">
+        <h2 class="fade-in text-5xl font-semibold tracking-tight text-white sm:text-7xl">Tentang Sekolah</h2>
+        <p class="fade-in mt-8 text-lg text-pretty text-gray-300 sm:text-xl/8">SMK IT Dar El Fath adalah 
+          sekolah menengah kejuruan yang fokus pada pengembangan keterampilan dan kompetensi di bidang 
+          teknologi informasi dan desain komunikasi visual. Dengan lingkungan belajar yang inovatif, 
+          sekolah ini memberikan berbagai program keahlian yang mempersiapkan siswa untuk terjun langsung 
+          ke dunia industri.</p>
+      </div>
+      <div class="fade-in mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
+        <dl class="mt-16 grid grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4">
+          <div class="flex flex-col-reverse gap-1">
+            <dt class="text-base/7 text-gray-300">Siswa</dt>
+            <dd class="text-4xl font-semibold tracking-tight text-white">46+</dd>
+          </div>
+          <div class="flex flex-col-reverse gap-1">
+            <dt class="text-base/7 text-gray-300">Tenaga Pengajar</dt>
+            <dd class="text-4xl font-semibold tracking-tight text-white">10+</dd>
+          </div>
+          <div class="flex flex-col-reverse gap-1">
+            <dt class="text-base/7 text-gray-300">Durasi Pengajar</dt>
+            <dd class="text-4xl font-semibold tracking-tight text-white">8 Jam</dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+  </div>
+  
+
+   <!--Visi Misi-->
+   <main class="overflow-hidden bg-gray-100 w-full justify-between flex-col py-5 lg:flex-row dark:bg-slate-900 transition delay-150 duration-300">
+        <section data-aos="fade-up"data-aos-duration="1000" class="mx-5 my-5 lg:mx-16">
+            <h2 class="font-semibold text-xl text-blue-500">Visi Misi</h2>
+            <h1 class="text-4xl font-semibold my-1 lg:text-4xl dark:text-white transition delay-150 duration-300">Generasi Tebaik Untuk Masa Depan Gemilang...</h1>
+            <p class="text-gray-500 mt-3 lg:w-3xl ">"Dengan visi misi yang berfokus pada pengembangan potensi individu, peningkatan kualitas pendidikan, 
+                dan pemberdayaan teknologi, kami berkomitmen untuk menciptakan generasi yang kreatif, inovatif, 
+                serta berakhlak mulia demi mewujudkan masa depan yang lebih baik."
+            </p>
+            <div class="flex flex-col gap-5 mt-7 lg:flex-row">
+                <!--<div class="bg-linear-to-r text-white from-cyan-500 to-blue-500 border-1 border-gray-300 rounded-xl shadow-xl p-8 mt-5 lg:w-1/2">
+                    <h1 class="font-bold text-2xl lg:text-3xl">Visi</h1>
+                    <p class=" mt-3">Menjadi lembaga pendidikan yang unggul dalam mengintegrasikan 
+                        nilai-nilai keislaman dengan pendidikan akademik dan keterampilan 
+                        modern untuk mencetak generasi berakhlak mulia dan berkompetensi global.
+                    </p>
+                </div>
+                <div class="bg-linear-to-r text-white from-cyan-500 to-blue-500 rounded-xl shadow-xl p-8 mt-5 lg:w-1/2">
+                    <h1 class="font-bold text-2xl lg:text-3xl">Misi</h1>
+                    <p class=" mt-3">Membentuk Generasi Terbaik Untuk Masa Depan Gemilang</p>
+                </div>-->
+            </div>
+        </section>
+   </main>
+
+   <!--Kemitraan Kerja-->
+   <div class="bg-white flex justify-center py-10 dark:bg-slate-800 transition delay-150 duration-300">
+    <div class=" w-full flex flex-wrap flex-row bg-white justify-around lg:flex-wrap lg:px-0 lg:gap-12 dark:bg-slate-800 transition delay-150 duration-300">
+      
+      <img data-aos="fade-up"data-aos-duration="1000" src="src/img/ummi_foundation-removebg-preview.png" alt="SavvyCal" class="w-44 h-auto lg:w-60 h-auto">
+      <img data-aos="fade-up"data-aos-duration="1000" src="src/img/ummi_foundation-removebg-preview.png" alt="SavvyCal" class="w-44 h-auto lg:w-60 h-auto">
+      <img data-aos="fade-up"data-aos-duration="1000" src="src/img/ummi_foundation-removebg-preview.png" alt="SavvyCal" class="w-44 h-auto lg:w-60 h-auto">
+      
+      
+
+    </div>
+   </div>
+      
+  
+
+
+   <!--Program Unggulan-->
+   <div class="overflow-hidden bg-gray-100 dark:bg-slate-900 py-24 transition delay-150 duration-300">
+    <div class="mx-auto max-w-7xl px-6">
+      <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+        <div class="lg:pt-4 lg:pr-8">
+          <div data-aos="fade-right"data-aos-duration="1000" class="lg:max-w-lg">
+            <h2 class="font-semibold text-xl text-blue-500 dark:text-blue-500 transition delay-150 duration-300">Program</h2>
+            <p class="font-semibold mt-2 text-4xl text-gray-900 sm:text-5xl dark:text-white transition delay-150 duration-300">Program Unggulan</p>
+            <p class="mt-6 text-lg/8 text-gray-600 dark:text-gray-300 transition delay-150 duration-300">Program unggulan merupakan inisiatif utama yang dirancang untuk meningkatkan kualitas pendidikan dan keterampilan siswa.</p>
+            <dl class="mt-10 max-w-xl space-y-8 text-base/7 text-gray-600 lg:max-w-none">
+              <div class="relative pl-16 transition delay-150 duration-300">
+                <dt class="inline font-semibold text-gray-900">
+                  <svg class="absolute top-1 left-1 size-5 text-blue-500 p-2 border-1 border-gray-300 rounded-full w-10 h-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                    <path d="M11.25 4.533A9.707 9.707 0 0 0 6 3a9.735 9.735 0 0 0-3.25.555.75.75 0 0 0-.5.707v14.25a.75.75 0 0 0 1 .707A8.237 8.237 0 0 1 6 18.75c1.995 0 3.823.707 5.25 1.886V4.533ZM12.75 20.636A8.214 8.214 0 0 1 18 18.75c.966 0 1.89.166 2.75.47a.75.75 0 0 0 1-.708V4.262a.75.75 0 0 0-.5-.707A9.735 9.735 0 0 0 18 3a9.707 9.707 0 0 0-5.25 1.533v16.103Z" />
+                  </svg>                  
+                  <span class="dark:text-white text-xl transition delay-150 duration-300">Tahsin dan Tahfidz.</span>
+                </dt>
+                <dd class="inline dark:text-gray-300 transition delay-150 duration-300">adalah program pembelajaran Al-Qur'an yang bertujuan memperbaiki bacaan sesuai tajwid (tahsin) dan menghafal ayat-ayat suci secara sistematis (tahfidz), sekaligus membentuk karakter Islami.</dd>
+              </div>
+              <div class="relative pl-16 transition delay-150 duration-300">
+                <dt class="inline font-semibold text-gray-900">
+                  <svg class="absolute top-1 left-1 size-5 text-blue-500 p-2 border-1 border-gray-300 rounded-full w-10 h-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                    <path fill-rule="evenodd" d="M7.5 6a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM3.751 20.105a8.25 8.25 0 0 1 16.498 0 .75.75 0 0 1-.437.695A18.683 18.683 0 0 1 12 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 0 1-.437-.695Z" clip-rule="evenodd" />
+                  </svg>                  
+                  <span class="dark:text-white text-xl transition delay-150 duration-300">Character Building.</span>
+                </dt>
+                <dd class="inline dark:text-gray-300 transition delay-150 duration-300"> adalah proses pembentukan karakter individu melalui penanaman nilai-nilai positif, seperti integritas, tanggung jawab, disiplin, dan empati, untuk menciptakan pribadi yang beretika dan berkontribusi dalam masyarakat..</dd>
+              </div>
+              <div class="relative pl-16 transition delay-150 duration-300">
+                <dt class="inline font-semibold text-gray-900">
+                  <svg class="absolute top-1 left-1 size-5 text-blue-500 p-2 border-1 border-gray-300 rounded-full w-10 h-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-6">
+                    <path d="M4.913 2.658c2.075-.27 4.19-.408 6.337-.408 2.147 0 4.262.139 6.337.408 1.922.25 3.291 1.861 3.405 3.727a4.403 4.403 0 0 0-1.032-.211 50.89 50.89 0 0 0-8.42 0c-2.358.196-4.04 2.19-4.04 4.434v4.286a4.47 4.47 0 0 0 2.433 3.984L7.28 21.53A.75.75 0 0 1 6 21v-4.03a48.527 48.527 0 0 1-1.087-.128C2.905 16.58 1.5 14.833 1.5 12.862V6.638c0-1.97 1.405-3.718 3.413-3.979Z" />
+                    <path d="M15.75 7.5c-1.376 0-2.739.057-4.086.169C10.124 7.797 9 9.103 9 10.609v4.285c0 1.507 1.128 2.814 2.67 2.94 1.243.102 2.5.157 3.768.165l2.782 2.781a.75.75 0 0 0 1.28-.53v-2.39l.33-.026c1.542-.125 2.67-1.433 2.67-2.94v-4.286c0-1.505-1.125-2.811-2.664-2.94A49.392 49.392 0 0 0 15.75 7.5Z" />
+                  </svg>                  
+                  <span class="dark:text-white text-xl transition delay-150 duration-300">English Clube.</span>
+                </dt>
+                <dd class="inline dark:text-gray-300 transition delay-150 duration-300">adalah kegiatan belajar bahasa Inggris yang bertujuan meningkatkan kemampuan berbahasa melalui praktik berbicara, mendengar, membaca, dan menulis dalam suasana yang interaktif dan menyenangkan.</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+        <img data-aos="fade-left"data-aos-duration="1000" src="src/img/dahboard2.JPG" alt="Product screenshot" class="w-[48rem] max-w-none rounded-xl ring-1 shadow-xl ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0" width="2432" height="1442">
+      </div>
+    </div>
+  </div>
+
+  <!--Kegiatan-->
+  <main class="overflow-hidden flex bg-white flex-col justify-center lg:flex-row dark:bg-slate-800 transition delay-150 duration-300">
+    <section class="mx-auto max-w-7xl px-6 lg: pb-1 sm:pt-24 sm:pb-4 my-2 lg:mx-16 flex flex-col ">
+        <div data-aos="fade-up"data-aos-duration="1000"class="flex flex-col">
+          <div>
+            <h2 class="font-semibold text-xl text-blue-500">Jurusan</h2>
+            <p class="font-semibold  mt-2 text-4xl text-gray-900 sm:text-5xl dark:text-white text-pretty transition delay-150 duration-300">Kegiatan Unggulan</p>
+        </div>
+            <p class="text-gray-500 lg:w-2xl mt-3 lg:mt-10 w-sm">"Dengan visi misi yang berfokus pada pengembangan potensi individu, peningkatan kualitas pendidikan, 
+                dan pemberdayaan teknologi, kami berkomitmen untuk menciptakan generasi yang kreatif, inovatif, 
+                serta berakhlak mulia demi mewujudkan masa depan yang lebih baik."
+            </p>
+        </div>
+        <div>
+          <div class="sm:py-5">
+            <div class="mx-auto max-w-7xl px-1 ">
+              <div class="flex flex-wrap gap-y-16 gap-x-8 mt-8 lg:gap-10 justify-center pb-10">
+                
+                <!--Blog Jurusan 1-->
+                <article data-aos="fade-up"data-aos-duration="1000" class="w-full lg:w-86" >
+                  <a class="blog-1.html">
+                      <img src="src/img/malam-bina-iman-taqwa.jpg" alt="" class="object-cover w-full h-56 bg-gray-500 rounded-md">
+                    <h3 class="mt-3 text-xl font-semibold text-gray-900 group-hover:text-gray-600 dark:text-white">
+                      <a class="transition delay-150 duration-300" href="blog-1.html">
+                        <span class="absolute inset-0"></span>
+                        Malam Bina Iman dan Taqwa
+                      </a>
+                    </h3>
+                    <p class="mt-2 line-clamp-3 text-sm/6 text-gray-600 dark:text-gray-500">MABIT adalah kegiatan malam untuk meningkatkan iman, takwa, dan kedekatan kepada Allah melalui ibadah dan kajian keislaman.</p>
+                    <a href="blog-1.html"><button class="px-10 border-1 mt-5 border-blue-500 rounded-md p-2 text-sm text-white font-semibold bg-blue-500">Lihat</button></a>
+                  </a>
+                </article>
+                <!--Blog Jurusan 2-->
+                <article data-aos="fade-up"data-aos-duration="1000" class="w-full lg:w-86 ">
+                  <a class="">
+                      <img src="src/img/latihan-kepemimpinan.jpg" alt="" class="object-cover w-full h-56 bg-gray-500 rounded-md">
+                    <h3 class="mt-3 text-xl font-semibold text-gray-900 group-hover:text-gray-600 dark:text-white">
+                      <a class="transition delay-150 duration-300" href="#">
+                        <span class="absolute inset-0"></span>
+                        Latihan Dasar Kepemimpinan Sekolah (LDKS)
+                      </a>
+                    </h3>
+                    <p class="mt-2 line-clamp-3 text-sm/6 text-gray-600 dark:text-gray-500">LDKS adalah kegiatan pelatihan dasar untuk membentuk jiwa kepemimpinan, disiplin, dan tanggung jawab siswa.</p>
+                    <a href=""><button class="px-10 mt-5 border-1 border-blue-500 rounded-md p-2 text-sm text-white font-semibold bg-blue-500">Lihat</button></a>
+                  </a>
+                </article>
+                <!--Blog Jurusan 3-->
+                <article data-aos="fade-up"data-aos-duration="1000" class="w-full lg:w-86 ">
+                  <a class="">
+                      <img src="src/img/SGI-school go institusi.jpg" alt="" class="object-cover w-full h-56 bg-gray-500 rounded-md">
+                    <h3 class="mt-3 text-xl font-semibold text-gray-900 group-hover:text-gray-600 dark:text-white">
+                      <a class="transition delay-150 duration-300" href="#">
+                        <span class="absolute inset-0"></span>
+                        School Go Institution (SGI)
+                      </a>
+                    </h3>
+                    <p class="mt-2 line-clamp-3 text-sm/6 text-gray-600 dark:text-gray-500">SGI adalah program pengembangan diri siswa dalam bidang kepemimpinan, karakter, dan potensi akademik.</p>
+                    <a href=""><button class="px-10 mt-5 border-1 border-blue-500 rounded-md p-2 text-sm text-white font-semibold bg-blue-500">Lihat</button></a>
+                  </a>
+                </article>
+                <!--Blog Jurusan 4-->
+                <article data-aos="fade-up"data-aos-duration="1000" class="w-full lg:w-86 ">
+                  <a class="">
+                      <img src="src/img/green-youth.jpg" alt="" class="object-cover w-full h-56 bg-gray-500 rounded-md">
+                    <h3 class="mt-3 text-xl font-semibold text-gray-900 group-hover:text-gray-600 dark:text-white">
+                      <a class="transition delay-150 duration-300" href="#">
+                        <span class="absolute inset-0"></span>
+                        Green Youth Movement
+                      </a>
+                    </h3>
+                    <p class="mt-2 line-clamp-3 text-sm/6 text-gray-600 dark:text-gray-500">Green Youth Movement adalah gerakan kepemudaan peduli lingkungan untuk menciptakan perubahan positif dan berkelanjutan.</p>
+                    <a href=""><button class="px-10 mt-5 border-1 border-blue-500 rounded-md p-2 text-sm text-white font-semibold bg-blue-500">Lihat</button></a>
+                  </a>
+                </article>
+                <!--Blog Jurusan 5-->
+                <article data-aos="fade-up"data-aos-duration="1000" class="w-full lg:w-86 ">
+                  <a class="">
+                      <img src="src/img/lomba-smp.jpg" alt="" class="object-cover w-full h-56 bg-gray-500 rounded-md">
+                    <h3 class="mt-3 text-xl font-semibold text-gray-900 group-hover:text-gray-600 dark:text-white">
+                      <a class="transition delay-150 duration-300" href="#">
+                        <span class="absolute inset-0"></span>
+                        Amazing Rajab, Memperngati Maulid Nabi Muhammad SAW
+                      </a>
+                    </h3>
+                    <p class="mt-2 line-clamp-3 text-sm/6 text-gray-600 dark:text-gray-500">Amazing Rajab adalah kegiatan keagamaan untuk memperingati Maulid Nabi Muhammad SAW dengan penuh makna dan semangat cinta Rasul.</p>
+                    <a href=""><button class="px-10 mt-5 border-1 border-blue-500 rounded-md p-2 text-sm text-white font-semibold bg-blue-500">Lihat</button></a>
+                  </a>
+                </article>
+                <!--Blog Jurusan 6-->
+                <article data-aos="fade-up"data-aos-duration="1000" class="w-full lg:w-86 ">
+                  <a class="">
+                      <img src="src/img/outing-class.jpg" alt="" class="object-cover w-full h-56 bg-gray-500 rounded-md">
+                    <h3 class="mt-3 text-xl font-semibold text-gray-900 group-hover:text-gray-600 dark:text-white">
+                      <a class="transition delay-150 duration-300" href="#">
+                        <span class="absolute inset-0"></span>
+                        Outing Class
+                      </a>
+                    </h3>
+                    <p class="mt-2 line-clamp-3 text-sm/6 text-gray-600 dark:text-gray-500">Outing Class adalah pembelajaran di luar kelas untuk memperluas wawasan dan pengalaman siswa secara langsung.</p>
+                    <a href=""><button class="px-10 mt-5 border-1 border-blue-500 rounded-md p-2 text-sm text-white font-semibold bg-blue-500">Lihat</button></a>
+                  </a>
+                </article>
+
+                <!-- More posts... -->
+              </div>
+            </div>
+          </div>
+          
+        </div>
+    </section>
+</main>
+  
+  <!-- Komentar -->
+    <div class="flex min-h-full flex-col justify-center px-6 py-16 lg:px-8 bg-gray-100 dark:bg-slate-800 transition delay-150 duration-300">
+        <div class="flex flex-col-reverse lg:flex-row-reverse justify-center gap-20">
+            <main data-aos="fade-right"data-aos-duration="1000" class="gap-2 flex flex-col pb-8 shadow-md px-10 bg-white text-sm rounded-xl border border-gray-300 pt-6 lg:pb-5 dark:bg-slate-900 dark:text-white dark:border-gray-600 transition delay-150 duration-300">
+                <h1 class="text-gray-900 font-semibold text-xl mb-5 dark:text-white">Komentar</h1>
+                <div id="comments" class="lg:w-2xl h-80 overflow-y-auto overflow-x-hidden mt-5 text-black bg-white dark:bg-slate-900 dark:text-white dark:border-gray-700 rounded-lg delay-300 transition duration-150  "></div>
+            </main>
+
+            <main data-aos="fade-right"data-aos-duration="1000" class="w-96 py-7 px-7 border border-gray-300 rounded-xl bg-white  shadow-md dark:bg-slate-900 dark:border-gray-600 transition delay-150 duration-300">
+                <div class="sm:mx-auto sm:w-full sm:max-w-sm">
+                    <h2 class="mb-7 text-center text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Form Komentar</h2>
+                </div>
+
+                <form id="commentForm" novalidate class="dark:text-white transition delay-150 duration-300" method="post" action="submit_comment.php">
+                    <label for="name" class="block text-sm font-medium text-gray-900 dark:text-white">Nama Lengkap</label>
+                    <input type="text" id="name" name="name" placeholder="Fulan bin Fulan" autocomplete="name" required
+                        class="mb-5 dark:bg-slate-600 dark:outline-gray-500 transition block w-full rounded-md bg-white px-3 py-1.5 text-gray-900 outline-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:outline-indigo-600 sm:text-sm dark:text-white">
+
+                    <label for="email" class="block text-sm font-medium text-gray-900 dark:text-white">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Fulan@gmail.com" autocomplete="email" required
+                        class="mb-5 dark:bg-slate-600 dark:outline-gray-500 transition block w-full rounded-md bg-white px-3 py-1.5 text-gray-900 outline-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:outline-indigo-600 sm:text-sm dark:text-white">
+
+                    <label for="comment" class="block text-sm font-medium text-gray-900 dark:text-white">Komentar</label>
+                    <textarea id="comment" name="comment" placeholder="Tulis komentar Anda" required
+                        class="dark:bg-slate-600 dark:outline-gray-500 transition block w-full rounded-md bg-white px-3 py-1.5 text-gray-900 outline-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:outline-indigo-600 sm:text-sm dark:text-white"></textarea>
+
+                    <button type="submit"
+                        class="block w-full bg-blue-500 px-3 py-1.5 text-white rounded-lg mt-5 hover:bg-blue-600 transition">
+                        Kirim
+                    </button>
+                </form>
+            </main>
+        </div>
+    </div>
+    <script>
+      async function loadComments() {
+          try {
+              let response = await fetch('backend/get_comments.php');
+              let result = await response.json();
+
+              let commentsContainer = document.getElementById('comments');
+              commentsContainer.innerHTML = "";
+
+              if (result.success) {
+                  result.data.forEach(comment => {
+                      let commentElement = document.createElement('div');
+                      commentElement.className = "my-2 p-3 border-b-1 borderblack dark:bg-gray-900 overflow-x-auto overflow-y-auto";
+                      commentElement.innerHTML = `
+                          <p><strong>${comment.name}</strong> - <span class="text-gray-500">${comment.created_at}</span></p>
+                          <p>${comment.comment}</p>
+                      `;
+                      commentsContainer.appendChild(commentElement);
+                  });
+              } else {
+                  commentsContainer.innerHTML = "<p class='text-gray-500'>Belum ada komentar.</p>";
+              }
+          } catch (error) {
+              console.error("Gagal memuat komentar:", error);
+          }
+      }
+
+      // Panggil fungsi saat halaman selesai dimuat
+      document.addEventListener("DOMContentLoaded", loadComments);
+
+      document.getElementById('commentForm').addEventListener('submit', async function(event) {
+          event.preventDefault();
+
+          let formData = new FormData(this);
+
+          try {
+              let response = await fetch('backend/submit_comment.php', {
+                  method: 'POST',
+                  body: formData
+              });
+
+              let result = await response.json();
+              alert(result.message);
+
+              if (result.success) {
+                  loadComments(); // Refresh komentar
+                  this.reset(); // Kosongkan form
+              }
+          } catch (error) {
+              console.error("Error saat mengirim komentar:", error);
+              alert("Terjadi kesalahan: " + error.message);
+          }
+      });
+</script>
+
+      <!-- Google Maps Embed -->
+    <section>
+      <div class="aspect-w-16 aspect-h-9">
+        <iframe
+          class="w-full h-96 rounded-lg shadow-md"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1181.6362364164154!2d104.11796282095395!3d-5.016666600869071!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e4785195d736193%3A0x704788037987992c!2sSMK%20IT%20ISLAM%20TERPADU%20DAR%20EL%20FATH%20SCHOOL!5e0!3m2!1sid!2sid!4v1745322819111!5m2!1sid!2sid" 
+          allowfullscreen=""
+          loading="lazy">
+        </iframe>
+      </div>
+    </section>
+
+      <!--Footer -->
+    <footer class="bg-white dark:bg-slate-900 dark:text-white duration-300 transition delay-150">
+  <div class="max-w-screen-xl px-4 pt-16 pb-5 mx-auto sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
+      <div>
+        <div class=" flex align-center">
+          <img src="src/img/Logo-SMK.png" class="h-6 sm:h-9 mr-3" alt="logo" />
+          <h1 class="font-semibold">SMK - SMA IT Dar El Fath</h1>
+        </div>
+      
+        <p class="max-w-xs mt-4 text-sm text-gray-600">
+          Watas, Kec. Balik Bukit, Kabupaten Lampung Barat, Lampung 34811
+        </p>
+        <div class="flex mt-8 space-x-6 text-gray-600">
+          <a class="hover:opacity-75" href target="_blank" rel="noreferrer">
+            <span class="sr-only"> Facebook </span>
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path fillRule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clipRule="evenodd" />
+            </svg>
+          </a>
+          <a class="hover:opacity-75" href="https://www.instagram.com/smk_it_darelfath?igsh=dDZ2ajdoazYyanc1" target="_blank" rel="noreferrer" >
+            <span class="sr-only"> Instagram </span>
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path fillRule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clipRule="evenodd" />
+            </svg>
+          </a>
+          <a class="hover:opacity-75" href target="_blank" rel="noreferrer">
+            <span class="sr-only"> GitHub </span>
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path fillRule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clipRule="evenodd" />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 gap-8 lg:col-span-2 sm:grid-cols-2 lg:grid-cols-4">
+        <div>
+          <p class="font-medium">
+            Sekolah
+          </p>
+          <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
+            <a class="hover:opacity-75" href> Tentang Kami </a>
+            <a class="hover:opacity-75" href> Blog </a>
+            <a class="hover:opacity-75" href> Program Unggulan </a>
+            <a class="hover:opacity-75" href> Kontak </a>
+          </nav>
+        </div>
+        <div>
+          <p class="font-medium">
+            Kontak
+          </p>
+          <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
+            <a class="hover:opacity-75" href> Kontak </a>
+            <a class="hover:opacity-75" href> FAQs </a>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <p class="mt-8 text-xs text-gray-800 text-center dark:text-gray-300">
+      © 2025 SMK IT Dar El Fath School | Dibuat dengan ❤️ oleh <br> <a class="font-bold text-blue-500 " href="https://fadilaziz.github.io/fadil.github.io/">Muhamad Faidil Aziz</a>
+    </p>
+  </div>
+</footer>
+<script>
+  AOS.init();
+</script>
+</body>
+</html>
